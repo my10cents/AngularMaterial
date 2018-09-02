@@ -1,0 +1,103 @@
+<div style="padding: 10px;">
+    <h1>
+        Home
+    </h1>
+    <mat-grid-list cols="3">
+        <mat-grid-tile>
+            <mat-card style="width: 95%;">
+                <mat-card-header>
+                    <mat-card-title>Radio Button</mat-card-title>
+                </mat-card-header>
+                <mat-divider></mat-divider>
+                <mat-card-content>
+                    <br />
+                    <mat-checkbox>Check me!</mat-checkbox>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+                <div class="example-container">
+                    <!-- Input -->
+                    <mat-form-field>
+                        <input matInput placeholder="Input">
+                    </mat-form-field>
+                    <br />
+                    <br />
+                    <!-- Text Area -->
+                    <mat-form-field>
+                        <textarea matInput placeholder="Textarea"></textarea>
+                    </mat-form-field>
+                    <br />
+                    <br />
+                    <!-- Select -->
+                    <mat-form-field>
+                        <mat-select placeholder="Select">
+                        <mat-option value="option">Option</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <!-- Radio Button -->
+            <mat-card style="width: 95%;">
+                <mat-card-header>
+                    <mat-card-title>Radio Button</mat-card-title>
+                </mat-card-header>
+                <mat-divider></mat-divider>
+                <mat-card-content>
+                    <br />
+                    <mat-radio-group>
+                        <mat-radio-button value="1">Option 1</mat-radio-button>
+                        <mat-radio-button value="2">Option 2</mat-radio-button>
+                    </mat-radio-group>
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-card style="width: 95%;">
+                <mat-card-header>
+                    <mat-card-title>Slider</mat-card-title>
+                </mat-card-header>
+                <mat-divider></mat-divider>
+                <mat-list style="padding: 3px;">
+                        <mat-slide-toggle
+                            class="example-margin"
+                            [color]="color"
+                            [checked]="true"
+                            [disabled]="disabled">
+                            Slide me!
+                        </mat-slide-toggle>
+                </mat-list>
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-card style="width: 95%;">
+                <mat-card-header>
+                    <mat-card-title>Divider</mat-card-title>
+                </mat-card-header>
+                <mat-divider></mat-divider>
+                <mat-list style="padding: 3px;">
+                    <mat-list-item>Item 1</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Item 2</mat-list-item>
+                    <mat-divider></mat-divider>
+                    <mat-list-item>Item 3</mat-list-item>
+                </mat-list>
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile>
+            <mat-card style="width: 95%;">
+                <mat-card-header>
+                    <mat-card-title>Divider</mat-card-title>
+                </mat-card-header>
+                <mat-divider></mat-divider>
+                <mat-card-content>
+                    <br />
+                </mat-card-content>
+            </mat-card>
+        </mat-grid-tile>
+        <mat-grid-tile></mat-grid-tile>
+        <mat-grid-tile></mat-grid-tile>
+        <mat-grid-tile></mat-grid-tile>
+    </mat-grid-list>
+</div>

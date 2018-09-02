@@ -1,0 +1,33 @@
+/deep/ .mat-horizontal-stepper-header-container{
+    border-bottom: 1px solid silver;
+}
+/* ng-tns-c8-0{*/
+/deep/ .mat-stepper-horizontal{
+    //border: 1px solid blue !important;
+    border-top:1px solid silver;
+    border-bottom:1px solid silver;
+}
+
+/deep/ .mat-horizontal-content-container{
+    padding-top: 24px !important;
+}
+
+/* ng-trigger ng-trigger-stepTransition ng-tns-c8-0 ng-star-inserted*/
+/deep/ .mat-horizontal-stepper-content {
+    //border: 1px solid green !important;
+}
+
+/deep/ .mat-step-header .mat-step-icon-not-touched {
+    background-color: rgba(0,0,0,.15);
+    color:gray;
+}
+
+///deep/ .mat-step-header .mat-step-label, .mat-step-header .mat-step-optional,
+// /deep/ .mat-step-label.mat-step-label-active{
+//     //color: rgba(0,0,0,.18);
+//     color: red;
+// }
+
+/deep/ .mat-step-label-selected{
+    font-weight: 700;
+}

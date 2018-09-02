@@ -12,6 +12,10 @@ import {
     MatIconModule,
     MatListModule
 } from '@angular/material';
+import { AdminModule } from './modules/admin/admin.module';
+import { ManagerModule } from './modules/manager/manager.module';
+import { ProductModule } from './modules/product/product.module';
+import { AppService } from './app.service';
 
 @NgModule({
     declarations: [AppComponent],
@@ -24,9 +28,12 @@ import {
         MatButtonModule,
         MatSidenavModule,
         MatIconModule,
-        MatListModule
+        MatListModule,
+        AdminModule,
+        ManagerModule,
+        ProductModule
     ],
-    providers: [],
+    providers: [AppService],
     bootstrap: [AppComponent]
 })
 export class AppModule {}

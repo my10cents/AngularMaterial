@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "title": "Administração",
+        "target": "/admin/list",
+        "icon": ""
+    },
+    {
+        "id": 2,
+        "title": "Gerencial",
+        "target": "/manager/list",
+        "icon": ""
+    },
+    {
+        "id": 3,
+        "title": "Reembolso",
+        "icon": ""
+    },
+    {
+        "id": 4,
+        "title": "Mensal",
+        "target": "/reembolso/mensal",
+        "parentId": 3,
+        "icon": ""
+    },
+    {
+        "id": 4,
+        "title": "Viagem",
+        "target": "/reembolso/viagem",
+        "parentId": 3,
+        "icon": ""
+    },
+    {
+        "id": 5,
+        "title": "Impressão",
+        "parentId": 3,
+        "icon": ""
+    },
+    {
+        "id": 6,
+        "title": "Reembolso Mensal",
+        "target": "rota",
+        "parentId": 5,
+        "icon": ""
+    },
+    {
+        "id": 7,
+        "title": "Reembolso Viagem",
+        "target": "rota",
+        "parentId": 5,
+        "icon": ""
+    },
+    {
+        "id": 8,
+        "title": "Components/Material Demo",
+        "icon": ""
+    },
+    {
+        "id": 9,
+        "title": "Home",
+        "target": "/demo/home",
+        "parentId": 8,
+        "icon": ""
+    },
+    {
+        "id": 10,
+        "title": "Dashboard",
+        "target": "/demo/dashboard",
+        "parentId": 8,
+        "icon": ""
+    },
+    {
+        "id": 11,
+        "title": "Table",
+        "target": "/demo/table",
+        "parentId": 8,
+        "icon": ""
+    },
+    {
+        "id": 11,
+        "title": "Toasty",
+        "target": "/demo/toast",
+        "parentId": 8,
+        "icon": ""
+    },
+    {
+        "id": 12,
+        "title": "Cards",
+        "target": "/demo/cards",
+        "parentId": 8,
+        "icon": ""
+    },
+    {
+        "id": 13,
+        "title": "Cards Grid Responsive",
+        "target": "/demo/cards-grid",
+        "parentId": 8,
+        "icon": ""
+    },
+    {
+        "id": 14,
+        "title": "Buttons",
+        "target": "/demo/button",
+        "parentId": 8,
+        "icon": ""
+    },
+    {
+        "id": 15,
+        "title": "Tabs",
+        "target": "/demo/tabs",
+        "parentId": 8,
+        "icon": ""
+    },
+    {
+        "id": 16,
+        "title": "Steps",
+        "target": "/demo/steps",
+        "parentId": 8,
+        "icon": ""
+    },
+    {
+        "id": 17,
+        "title": "Autocomplete",
+        "target": "/demo/autocomplete",
+        "parentId": 8,
+        "icon": ""
+    }
+]
+
+

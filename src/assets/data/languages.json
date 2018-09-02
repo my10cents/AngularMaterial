@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Portugues",
+        "code": "pt-BR",
+        "imageURL": "../assets/flags/portuguese.png"
+    },
+    {
+        "id": 2,
+        "name": "English",
+        "code": "us-EN",
+        "imageURL": "../assets/flags/english.png"
+    },
+    {
+        "id": 3,
+        "name": "Español",
+        "code": "es-ES",
+        "imageURL": "../assets/flags/spanish.png"
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Notification 01",
+        "description": "Descricao da notificação 1",
+        "size": 0,
+        "imgURL": "../assets/notification/error.png"
+    },
+    {
+        "id": 2,
+        "title": "Notification 02",
+        "description": "Descricao da notificação 2",
+        "size": 0,
+        "imgURL": "../assets/notification/warn.png"
+    },
+    {
+        "id": 3,
+        "title": "Notification 03",
+        "description": "Descricao da notificação 3",
+        "size": 0,
+        "imgURL": "../assets/notification/info.png"
+    },
+    {
+        "id": 4,
+        "title": "Notification 04",
+        "description": "Descricao da notificação 4",
+        "size": 0,
+        "imgURL": "../assets/notification/error.png"
+    }
+]

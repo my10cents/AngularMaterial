@@ -1,0 +1,73 @@
+<p>
+  step-demo works!
+</p>
+<div style="padding: 10px;">
+    <!-- [linear]="isLinear" -->
+    <mat-horizontal-stepper #stepper1>
+        <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field>
+                    <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel>Fill out your address</ng-template>
+                <mat-form-field>
+                    <input matInput placeholder="Address" formControlName="secondCtrl" required>
+                </mat-form-field>
+                <div>
+                    <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button>
+                </div>
+            </form>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Done</ng-template>
+            You are now done.
+            <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button (click)="stepper1.reset()">Reset</button>
+            </div>
+        </mat-step>
+    </mat-horizontal-stepper>
+</div>
+<br />
+<br />
+<div style="padding: 10px;">
+    <!-- [linear]="isLinear" -->
+    <mat-horizontal-stepper #stepper [@.disabled]="true">
+        <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>Fill out your name</ng-template>
+                <mat-form-field>
+                    <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+                </mat-form-field>
+            </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel>Fill out your address</ng-template>
+                <mat-form-field>
+                    <input matInput placeholder="Address" formControlName="secondCtrl" required>
+                </mat-form-field>
+            </form>
+        </mat-step>
+        <mat-step>
+            <ng-template matStepLabel>Done</ng-template>
+            You are now done.
+        </mat-step>
+    </mat-horizontal-stepper>
+    <div>
+        <button mat-button (click)="onPrior(stepper)" [disabled]="firstButton"><mat-icon>chevron_left</mat-icon>Back</button> <!--matStepperPrevious-->
+        <button mat-button (click)="onNext(stepper)" [disabled]="lastButton">Next<mat-icon>chevron_right</mat-icon></button> <!--matStepperNext-->
+        <button mat-button (click)="onReset(stepper)" [disabled]="firstButton"><mat-icon>cached</mat-icon>Reset</button>
+
+        <!-- -->
+    </div>
+</div>

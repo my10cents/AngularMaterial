@@ -1,0 +1,27 @@
+/*
+
+.mat-column-select {
+    overflow: initial;
+}
+
+table {
+    width: 100%;
+  } */
+
+.mat-row:hover {
+    background-color: #ececec;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+    min-width: 300px;
+    margin: 85px 5px 5px 5px;
+}
+
+.mat-table {
+    overflow: auto;
+    max-height: 500px;
+}
+
