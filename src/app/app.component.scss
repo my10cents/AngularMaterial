@@ -1,27 +1,32 @@
 .sidenav-container {
     height: 100%;
-  }
+}
 
-  .sidenav {
+.sidenav {
     width: 200px;
-  }
+}
 
-  .mat-toolbar.mat-primary {
+.mat-toolbar.mat-primary {
     position: sticky;
     top: 0;
-  }
+    z-index: 99999 !important; //coloca toolbar por cima dos componentes
+}
 
-  mat-sidenav{
-      top: 54px !important;
-  }
+mat-sidenav{
+    top: 54px !important;
+}
 
-  mat-toolbar{
-      position: fixed !important;
-      left: 0px;
-  }
+mat-toolbar{
+    position: fixed !important;
+    left: 0px;
+}
 
-  .mat-toolbar-row, .mat-toolbar-single-row {
+.mat-toolbar-row, .mat-toolbar-single-row {
     height: 53px;
-    }
+}
+
+mat-sidenav-content div{
+    margin-top: 62px;
+}
 
 

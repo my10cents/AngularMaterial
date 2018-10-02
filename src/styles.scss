@@ -31,3 +31,16 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
     -ms-filter: contrast(4) invert(1);
     filter: contrast(4) invert(1);
 }
+
+//overlay size override
+// @media (max-width: 600px)
+// {
+//   .facet_sidebar
+//    {
+//     display: none;
+//    }
+// }
+// .mat-drawer-backdrop.mat-drawer-shown {
+//     top: 52px;
+//     right: 17px;
+// }
