@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ManagerHomeComponent } from './manager-home/manager-home.component';
 
-const routes: Routes = [{ path: '', component: ManagerHomeComponent }];
+const routes: Routes = [];
 
 @NgModule({
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class ManagerRoutingModule {}
+export class SharedRoutingModule {}

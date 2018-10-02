@@ -5,10 +5,7 @@ import { ManagerRoutingModule } from './manager-routing.module';
 import { ManagerHomeComponent } from './manager-home/manager-home.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    ManagerRoutingModule
-  ],
-  declarations: [ManagerHomeComponent]
+    imports: [CommonModule, ManagerRoutingModule],
+    declarations: [ManagerHomeComponent]
 })
-export class ManagerModule { }
+export class ManagerModule {}

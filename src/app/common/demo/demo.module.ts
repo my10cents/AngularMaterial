@@ -36,7 +36,6 @@ import { GridListDemoComponent } from './grid-list-demo/grid-list-demo.component
 import { HomeDemoComponent } from './home-demo/home-demo.component';
 import { ProgressBarDemoComponent } from './progress-bar-demo/progress-bar-demo.component';
 import { TableBasicDemoComponent } from './table-basic-demo/table-basic-demo.component';
-import { ToastyDemoComponent } from './toasty-demo/toasty-demo.component';
 import { CardGridDemoComponent } from './card-grid-demo/card-grid-demo.component';
 import { TabDemoComponent } from './tab-demo/tab-demo.component';
 import { StepDemoComponent } from './step-demo/step-demo.component';
@@ -71,7 +70,6 @@ import { StepDemoComponent } from './step-demo/step-demo.component';
         MatStepperModule,
         MatAutocompleteModule
         //MatFormGroupModule
-
     ],
     declarations: [
         AutocompleteDemoComponent,
@@ -82,7 +80,6 @@ import { StepDemoComponent } from './step-demo/step-demo.component';
         HomeDemoComponent,
         ProgressBarDemoComponent,
         TableBasicDemoComponent,
-        ToastyDemoComponent,
         CardGridDemoComponent,
         TabDemoComponent,
         StepDemoComponent

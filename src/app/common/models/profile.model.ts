@@ -4,5 +4,5 @@ export class ProfileModel {
     lastName: string;
     email: string;
     imgURL: string;
-    toFullName(): string;
+    // toFullName(): string;
 }

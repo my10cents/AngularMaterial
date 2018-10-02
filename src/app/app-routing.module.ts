@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PageNotFoundComponent } from './common/components/page-not-found/page-not-found.component';
 
 const appRoutes: Routes = [
     {
@@ -17,12 +18,13 @@ const appRoutes: Routes = [
     },
     {
         path: 'product',
-        loadChildren: './modules/reembolso/reembolso.module#ReembolsoModule'
+        loadChildren: './modules/product/product.module#ProductModule'
     },
     {
         path: 'demo',
         loadChildren: './common/demo/demo.module#DemoModule'
-    }
+    },
+    { path: '**', component: PageNotFoundComponent }
 ];
 
 @NgModule({

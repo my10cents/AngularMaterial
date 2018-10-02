@@ -3,9 +3,9 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatStepper } from '@angular/material';
 
 @Component({
-  selector: 'app-step-demo',
-  templateUrl: './step-demo.component.html',
-  styleUrls: ['./step-demo.component.scss']
+    selector: 'app-step-demo',
+    templateUrl: './step-demo.component.html',
+    styleUrls: ['./step-demo.component.scss']
 })
 export class StepDemoComponent implements OnInit {
     public isLinear = false;
@@ -17,12 +17,12 @@ export class StepDemoComponent implements OnInit {
     constructor(private _formBuilder: FormBuilder) {}
 
     ngOnInit() {
-      this.firstFormGroup = this._formBuilder.group({
-        firstCtrl: ['', Validators.required]
-      });
-      this.secondFormGroup = this._formBuilder.group({
-        secondCtrl: ['', Validators.required]
-      });
+        this.firstFormGroup = this._formBuilder.group({
+            firstCtrl: ['', Validators.required]
+        });
+        this.secondFormGroup = this._formBuilder.group({
+            secondCtrl: ['', Validators.required]
+        });
     }
 
     onNext(stepper: MatStepper) {
@@ -44,9 +44,7 @@ export class StepDemoComponent implements OnInit {
     }
 
     private changeButton(stepper: MatStepper) {
-        this.lastButton = (stepper.selectedIndex === (stepper._steps.length - 1));
-        this.firstButton = (stepper.selectedIndex === 0);
+        this.lastButton = stepper.selectedIndex === stepper._steps.length - 1;
+        this.firstButton = stepper.selectedIndex === 0;
     }
-
-
 }

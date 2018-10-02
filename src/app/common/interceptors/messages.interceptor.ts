@@ -10,11 +10,12 @@ import {
 
 import { Observable } from 'rxjs';
 import { tap, map } from 'rxjs/operators';
-import { ToastyService } from '../components/toasty/toasty.service';
+import { ToastrService } from 'ngx-toastr';
+//import { ToastyService } from '../components/toasty/toasty.service';
 
 @Injectable()
 export class MessagesHttpInterceptor implements HttpInterceptor {
-    constructor(private toast: ToastyService) {}
+    constructor(private toast: ToastrService) {}
 
     intercept(
         request: HttpRequest<any>,
@@ -28,7 +29,7 @@ export class MessagesHttpInterceptor implements HttpInterceptor {
                 },
                 error => {
                     if (error instanceof HttpErrorResponse) {
-                        this.toast.error(error.statusText);
+                        // this.toast.error(error.statusText);
                         console.log(error);
                     }
                 }

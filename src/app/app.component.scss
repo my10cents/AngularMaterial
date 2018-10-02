@@ -12,10 +12,16 @@
   }
 
   mat-sidenav{
-      top: 65px !important;
+      top: 54px !important;
   }
 
   mat-toolbar{
       position: fixed !important;
       left: 0px;
   }
+
+  .mat-toolbar-row, .mat-toolbar-single-row {
+    height: 53px;
+    }
+
+

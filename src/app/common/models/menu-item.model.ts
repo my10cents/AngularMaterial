@@ -4,5 +4,7 @@ export declare class MenuItemModel {
     target: string;
     iconClass: string;
     parentId: string | number;
-    isFavority: boolean;
+    //isFavority: boolean;
+    visible: boolean;
+    children: Array<MenuItemModel>;
 }

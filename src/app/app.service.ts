@@ -8,10 +8,9 @@ import { ConfigurationModel } from './common/models/configuration.model';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class AppService {
-
     public loading: boolean = false;
 
     private _config: ConfigurationModel | any = null;
@@ -47,7 +46,7 @@ export class AppService {
             .toPromise();
     }
 
-    getTenant() {
+    getTenants() {
         return this.httpClient
             .get<TenantModel[]>('../assets/data/entities.json')
             .toPromise();

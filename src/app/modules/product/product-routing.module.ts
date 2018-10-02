@@ -8,11 +8,11 @@ const routes: Routes = [
         redirectTo: 'list',
         pathMatch: 'full'
     },
-    { path: 'list', component: ProductListComponent}
+    { path: 'list', component: ProductListComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule]
 })
-export class ProductRoutingModule { }
+export class ProductRoutingModule {}

@@ -9,12 +9,13 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "prettier":{
-      "singleQuote": true
+  "prettier": {
+    "singleQuote": true
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.1.0",
+    "@angular/cdk": "^6.2.0",
     "@angular/common": "^6.1.0",
     "@angular/compiler": "^6.1.0",
     "@angular/core": "^6.1.0",
@@ -25,9 +26,13 @@
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
     "core-js": "^2.5.4",
+    "@ngx-progressbar/core": "^5.0.1",
+    "@ngx-progressbar/http": "^5.0.1",
+    "@ngx-translate/core": "^10.0.2",
+    "@ngx-translate/http-loader": "^3.0.1",
+    "ngx-toastr": "^9.0.2",
     "rxjs": "^6.0.0",
-    "zone.js": "~0.8.26",
-    "@angular/cdk": "^6.2.0"
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.0",
