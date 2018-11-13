@@ -6,11 +6,11 @@ import { TreeViewComponent } from './tree-view.component';
 import { MaterialModule } from '../../material.module';
 import { MatIconModule, MatSidenavModule, MatListModule, MatToolbarModule, MatButtonModule } from '@angular/material';
 
-const sharedCompoents = [TreeViewComponent];
+const sharedComponents = [TreeViewComponent];
 
 @NgModule({
     imports: [CommonModule, SharedRoutingModule, MaterialModule],
-    declarations: [sharedCompoents],
-    exports: [sharedCompoents]
+    declarations: [sharedComponents],
+    exports: [sharedComponents]
 })
 export class SharedModule {}
